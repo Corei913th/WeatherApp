@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@FredCode-WeatherApp</title>
     <link rel="prefetch" href="./assets/images/spinner.gif" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="./js/.env.js" defer></script>
     <script src="./js/weather_start.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <section id="content">
-        <div id="form">
-            <div class="form-field">
-                <label for="city">Entrez votre ville</label>
-                <input type="text" name="city" id="city">
-            </div>
-            <button id="btnSend">Envoyer  <i class="fas fa-paper-plane icon" aria-hidden="true"></i></button>
+      <div id="form">
+        <div class="form-field">
+          <label for="city">Entrez votre ville</label>
+          <input type="text" name="city" id="city" />
         </div>
-       
-        <div id="response">
-            
-        </div>
+        <button id="btnSend">
+          Envoyer <i class="fas fa-paper-plane icon" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="response"></div>
     </section>
-</body>
+  </body>
 </html>
