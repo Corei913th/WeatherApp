@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    font-family: 'Plus Jakarta Sans';
+    transition: all 0.4s ease-out;
+}
+
+
+:root {
+    box-sizing: border-box;
+    --dark-blue: #180933c8;
+    --orange: rgba(105, 17, 117, 0.612);
+    --black: #1b1b1b;
+    --dark-grey: #717171;
+    --light-grey: #EDEDED;
+    --white: #FFF;
+}
+
+body {
+    background-image: url(../images/photo-1479030160180-b1860951d696.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+#content {
+    width: 28rem;
+    margin: 150px auto;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 15rem 10rem;
+}
+
+.form-field {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-bottom: .5em;
+    ;
+}
+
+.form-field label {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    ;
+}
+
+.form-field input {
+    border: 2px solid var(--light-grey);
+    border-radius: .5rem 0rem 0rem .5rem;
+    padding: .6rem;
+    outline: none;
+}
+
+.form-field input:focus {
+    border: 2px solid var(--orange);
+}
+
+#btnSend {
+    border: 2px solid transparent;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 0rem .5rem .5rem 0rem;
+    font-weight: bold;
+    cursor: pointer;
+    height: 2.6rem;
+    margin-top: 2.5rem;
+
+}
+
+/*#btnSend:hover {
+    border-color: var(--light-grey);
+}*/
+
+#response {
+    width: 99%;
+    height: fit-content;
+    border: 0.5px solid transparent;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    background: var(--orange);
+    padding: 1%;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.weather-image {
+    width: 5rem;
+    height: 5rem;
+}
+
+.temp {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.weather-description {
+    text-transform: capitalize;
+}
+
+#spinner {
+    margin-left: 7rem;
+}
